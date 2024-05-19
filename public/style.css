@@ -1,0 +1,334 @@
+body,
+html {
+  height: 100%;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Alumni Sans", sans-serif;
+}
+
+/* Custom styles for Navbar */
+.opacity-hover-off {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.opacity-hover-off:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+/* .navbar-nav .nav-link {
+  color: white ;
+  font-size: 1.2rem;  
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: white ;
+  color: black !important ;
+} */
+
+.navStyle:hover {
+  background-color: white;
+  color: black !important;
+}
+.logoDiv {
+  width: 50%;
+}
+.menuNavbar a {
+  color: black;
+}
+
+.nav-tabs .nav-link {
+  color: black;
+}
+
+.tab-menu {
+  display: flex; /* Arrange tabs horizontally */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent tabs from wrapping */
+  color: black;
+}
+
+.tab-link {
+  flex-shrink: 0; /* Prevent tabs from shrinking */
+  min-width: 130px; /* Set a minimum width for each tab */
+  padding: 10px;
+  color: black;
+  border-right-color: rgb(128, 2, 2) !important;
+}
+
+/* Hide on small screens */
+@media (max-width: 992px) {
+  /*#myNavbar {
+    display: none;
+  }*/
+  .bg-img {
+    background-image: url("assets/burgerBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: black;
+  }
+}
+
+/* Custom styles for Header */
+.bg-img {
+  background-image: url("assets/burgerBackground.jpg");
+  background-size: cover;
+  background-position: right;
+  min-height: 100vh;
+  color: black;
+}
+
+#safa-title {
+  color: yellow;
+  font-family: "Tangerine", serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+.centeredButton {
+  max-width: 100%;
+}
+
+.infoDiv {
+  padding-left: 1%;
+  padding-right: 0%;
+  margin-bottom: 11px;
+}
+
+.infoDiv a {
+  color: white;
+}
+
+.btn {
+  min-width: 250px;
+}
+
+a {
+  text-decoration: none;
+}
+/*Custom styles for Menu box*/
+.btn.hover-btn:hover {
+  background-color: rgb(71, 71, 71) !important;
+  color: white;
+}
+
+.addToCart {
+  font-size: 25px;
+}
+
+.buttonBackground {
+  background-color: rgb(128, 2, 2);
+}
+
+.sendBtn:hover {
+  background-color: rgb(128, 2, 2);
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.shoppingCartBtn {
+  min-width: 55px !important;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.shoppingCartBtn span {
+  margin-left: 0.1rem;
+}
+
+.foodRow {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+.shoppingCartTitle {
+  color: rgb(128, 2, 2);
+}
+
+.product {
+  width: 36%;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.product h3 {
+  font-size: 26px;
+  font-weight: 300;
+  padding-left: 10px;
+}
+
+.price {
+  width: 20%;
+  padding-left: 10px;
+  font-size: 25px;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.quantity {
+  width: 20%;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.quantity span {
+  font-size: 20px;
+}
+
+.total {
+  width: 20%;
+  padding-left: 20px;
+  font-size: 26px;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  text-align: center;
+}
+
+.subtotalSec {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.menu-color {
+  background-color: white;
+  color: black;
+}
+
+.menu-color a:hover {
+  background-color: rgb(128, 2, 2);
+  color: white;
+}
+
+/* .hover-red {
+  background-color: white;
+  color: black;
+}
+
+.hover-red:hover {
+  background-color: rgb(128, 2, 2);
+  color: white;
+} */
+
+.active-tab {
+  background-color: rgb(128, 2, 2) !important;
+  color: white !important;
+}
+
+.border-dark {
+  border-color: dark-grey;
+}
+
+.badge {
+  padding: 0.6em 0.8em;
+}
+
+.small-tag {
+  padding: 0.3em 0.3em;
+}
+
+.bg-red {
+  background-color: red;
+  color: white;
+}
+
+.bg-transparentDarkRed {
+  background-color: rgba(128, 2, 2, 0.678);
+}
+
+.menu h1 {
+  color: black;
+}
+
+/* Custom CSS for greyscale images */
+.img-greyscale {
+  filter: grayscale(100%);
+}
+
+/*XL form boxes*/
+.extra-large {
+  height: 60px;
+  font-size: 1.8rem;
+}
+
+.menuNavbar {
+  display: flex;
+  max-height: 65px !important;
+  overflow-y: auto !important;
+  white-space: nowrap !important;
+}
+
+.menuNavbar a {
+  flex-shrink: 0;
+  min-width: 130px !important;
+  max-height: 65px !important;
+}
+
+.addToCart:hover {
+  cursor: pointer;
+}
+
+.iconColor {
+  color: rgb(128, 2, 2);
+}
+
+@media screen and (min-width: 469px) {
+  .logoDiv {
+    width: fit-content;
+  }
+}
+
+@media (min-width: 992px) {
+  .shoppingCartBtn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .collapse.navbar-collapse {
+    flex-grow: 1;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logoDiv {
+    width: 50%;
+  }
+  .menuNavbar {
+    display: flex;
+    max-height: 65px !important;
+    overflow-y: auto !important;
+    white-space: nowrap !important;
+  }
+
+  .menuNavbar a {
+    flex-shrink: 0;
+    min-width: 130px !important;
+    max-height: 65px !important;
+    min-height: 64px;
+    font-size: medium;
+  }
+}

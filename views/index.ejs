@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Restaurant Reservations</title>
+    </head>
+    <body>
+        <h1>Restaurant Reservations</h1>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Message</th>
+            </tr>
+            <tbody id="reservations">
+            <% for (var i = 0; i < messages.length; i++) { %>
+                <tr>
+                    <td><span> <%= messages[i].name %></span></td>
+                    <td><span> <%= messages[i].address %></span></td>
+                    <td><span> <%= messages[i].phone %></span></td>
+                    <td><span> <%= messages[i].message %></span></td>
+                    <td><button class="delete-button"> delete</button></td>
+                </tr>
+            <% } %>
+            </tbody>
+        </table>
+
+        <script src="/public/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Safa Chicken</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--icon on the tab-->
+    <link rel = "icon" href ="assets/safaLogo.jpeg" type = "image/x-icon">
+    <!--Google Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alumni+Sans">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- Home Page -->
+    <section class="bg-img" id="home">
+      <nav class="navbar navbar-expand-lg fixed-top opacity-hover-off navbar-dark">
+        <div class="container-fluid headerDiv">
+          <div class="logoDiv">
+            <a class="navbar-brand" href="#home"><img src="assets/safaSticker.png" alt="Safa Chicken Logo" width="30%" height="50%"></a>
+          </div>
+          
+          <div class="navbar-header d-flex">
+            <a class="btn shoppingCartBtn text-white fs-3" data-bs-toggle="offcanvas" href="#shoppingCart" role="button" aria-controls="shoppingCart" id="shoppingCartBtn">
+              <i class="bi bi-cart3"></i>
+              <span></span>
+            </a>
+            <button class="navbar-toggler" id="togglerIcon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse collapsedNavBar" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link navStyle" href="#home" aria-current="page" style="font-size: 2rem;">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navStyle" href="#menu" style="font-size: 2rem;">MENU</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navStyle" href="#about" style="font-size: 2rem;">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navStyle" href="#contact" style="font-size: 2rem;">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+          
+          
+        </div>
+      </nav> 
+
+      <div class="container position-absolute top-50 centeredButton"><!-- to edit so the button is centered in the page-->
+        <div class="text-center">
+          <a href="#menu" class="btn btn-lg bg-dark text-white hover-btn fs-2">Let me see the menu</a>
+          <div class="infoDiv fs-3">
+            <a href="#about"><i class="bi bi-info-circle"></i> About</a>
+          </div>
+        </div>
+      </div>      
+    </section>
+    
+    <!-- Menu Container -->
+    <div class="container-fluid bg-light py-5 display-5" id="menu">
+      <div class="container-sm">
+    
+        <h1 class="text-center display-1 my-5" style="color:darkred;">THE MENU</h1>
+      
+        <div class="tab-menu text-center shadow rounded-top menu-color ">
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');" class="tab-link tablink border" id="mainLink" aria-current="page">Starter</a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Salads');" class="tab-link tablink border" id="saladTab">Salads</a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Sandwich');" class="tab-link tablink border" id="starterTab">Sandwich</a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Plate');" class="tab-link tablink border" id="plateTab">Plate</a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'familyPack');" class="tab-link tablink border" id="familyPackTab">Family Pack</a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Beverages');" class="tab-link tablink border" id="beveragesTab">Beverages</a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'addOns');" class="tab-link tablink border" id="addOnsTab">Add-ons</a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'freshChicken');" class="tab-link tablink border" id="freshChickenTab">Fresh Meat and Poultry</a>
+      </div>
+  
+        <!-- Starter Menu -->
+        <div id="Starter" class="container-fluid menu p-4 bg-white shadow">
+          <!-- Potato Wedges -->
+          <div>
+          <div class="d-flex justify-content-between align-items-baseline">
+            <h1 class="itemName mb-0 display-3"><b>potato wedges </b></h1><span class="itemTag d-none">potato-wedges</span>
+            <div class="badge text-white buttonBackground">
+              <span>$</span><span class="itemPrice">5.50</span>
+            </div>
+          </div>
+          <p class="text-muted">fried potato wedges dusted with our special salt served with barbecue sauce</p>
+          <div class="badge buttonBackground text-white addToCart">
+            <span >Add to cart</span>
+          </div>
+      </div>
+        <hr class="text-muted">
+    
+        <!-- Char Grilled Potato -->
+        <div>
+          <div class="d-flex justify-content-between align-items-baseline">
+            <h1 class="itemName mb-0 display-3"><b>char grilled potato</b></h1><span class="itemTag d-none">Char-grilled-potato</span>
+            <div class="badge text-white buttonBackground">
+              <span>$</span><span class="itemPrice">8.50</span>
+            </div>
+          </div>
+          <p class="text-muted">4 whole potatoes served with sour cream</p>
+          <div class="badge buttonBackground text-white addToCart">
+            <span >Add to cart</span>
+          </div>
+        </div>
+        <hr class="text-muted">
+    
+        <!-- French Fries Small -->
+        <div>
+          <div class="d-flex justify-content-between align-items-baseline">
+            <h1 class="itemName mb-0 display-3"><b>French Fries</b></h1><span class="itemTag d-none">french-fries</span>
+            <div class="badge text-white buttonBackground">
+              <span>$</span><span class="itemPrice">9.50</span>
+            </div>
+          </div>
+          <p class="text-muted">Small</p>
+          <div class="badge buttonBackground text-white addToCart">
+            <span >Add to cart</span>
+          </div>
+        </div>
+        <hr class="text-muted">
+
+        <!-- French Fries Medium -->
+        <div>
+          <div class="d-flex justify-content-between align-items-baseline">
+            <h1 class="itemName mb-0 display-3"><b>French Fries</b></h1><span class="itemTag d-none">french-fries-medium</span>
+            <div class="badge text-white buttonBackground">
+              <span>$</span><span class="itemPrice">9.50</span>
+            </div>
+          </div>
+          <p class="text-muted">Medium</p>
+          <div class="badge buttonBackground text-white addToCart">
+            <span >Add to cart</span>
+          </div>
+        </div>
+        <hr class="text-muted">
+    
+        <!-- French Fries Large -->
+        <div>
+          <div class="d-flex justify-content-between align-items-baseline">
+            <h1 class="itemName mb-0 display-3"><b>French Fries</b></h1><span class="itemTag d-none">french-fries-large</span>
+            <div class="badge text-white buttonBackground">
+              <span>$</span><span class="itemPrice">10.50</span>
+            </div>
+          </div>
+          <p class="text-muted">Large</p>
+          <div class="badge buttonBackground text-white addToCart">
+            <span >Add to cart</span>
+          </div>
+        </div>
+        <hr class="text-muted">
+
+        <!-- Chicken livers starters -->
+        <div>
+          <div class="d-flex justify-content-between align-items-baseline">
+            <h1 class="itemName mb-0 display-3"><b>Chicken Livers</b></h1><span class="itemTag d-none">Chicken-Livers-Starters</span>
+            <div class="badge text-white buttonBackground">
+              <span>$</span><span class="itemPrice">9.50</span>
+            </div>
+          </div>
+          <p class="text-muted">Grilled chicken livers in pomegrenade basting</p>
+          <div class="badge buttonBackground text-white addToCart">
+            <span >Add to cart</span>
+          </div>
+        </div>
+        <hr class="text-muted">
+
+        <!-- Sausages Starter-->
+        <div>
+          <div class="d-flex justify-content-between align-items-baseline">
+            <h1 class="itemName mb-0 display-3"><b>Makanek</b></h1><span class="itemTag d-none">Makanek-Starter</span>
+            <div class="badge text-white buttonBackground">
+              <span>$</span><span class="itemPrice">9.50</span>
+            </div>
+          </div>
+          <p class="text-muted">Sizzled makanek in pomegrenade basting</p>
+          <div class="badge buttonBackground text-white addToCart">
+            <span >Add to cart</span>
+          </div>
+        </div>
+        <hr class="text-muted">
+
+        <!-- Soujouk -->
+        <div>
+          <div class="d-flex justify-content-between align-items-baseline">
+            <h1 class="itemName mb-0 display-3"><b>Soujouk</b></h1><span class="itemTag d-none">Soujouk-Starter</span>
+            <div class="badge text-white buttonBackground">
+              <span>$</span><span class="itemPrice">9.50</span>
+            </div>
+          </div>
+          <p class="text-muted">Sizzled soujouk</p>
+          <div class="badge buttonBackground text-white addToCart">
+            <span >Add to cart</span>
+          </div>
+        </div>
+        <hr class="text-muted">
+
+        <!-- Hummus -->
+        <div>
+          <div class="d-flex justify-content-between align-items-baseline">
+            <h1 class="itemName mb-0 display-3"><b>Hummus</b></h1><span class="itemTag d-none">Hummus</span>
+            <div class="badge text-white buttonBackground">
+              <span>$</span><span class="itemPrice">9.50</span>
+            </div>
+          </div>
+          <div class="badge buttonBackground text-white addToCart">
+            <span >Add to cart</span>
+          </div>
+        </div>
+        <hr class="text-muted">
+
+        <!-- Mutabbal -->
+        <div>
+          <div class="d-flex justify-content-between align-items-baseline">
+            <h1 class="itemName mb-0 display-3"><b>Mutabbal</b></h1><span class="itemTag d-none">Mutabbal-Starter</span>
+            <div class="badge text-white buttonBackground">
+              <span>$</span><span class="itemPrice">9.50</span>
+            </div>
+          </div>
+          <div class="badge buttonBackground text-white addToCart">
+            <span >Add to cart</span>
+          </div>
+        </div>
+        <hr class="text-muted">
+
+        <!-- Kebbe -->
+        <div>
+          <div class="d-flex justify-content-between align-items-baseline">
+            <h1 class="itemName mb-0 display-3"><b>Kebbe</b></h1><span class="itemTag d-none">Kebbe-Starter</span>
+            <div class="badge text-white buttonBackground">
+              <span>$</span><span class="itemPrice">9.50</span>
+            </div>
+          </div>
+          <p class="text-muted">3 pieces</p>
+          <div class="badge buttonBackground text-white addToCart">
+            <span >Add to cart</span>
+          </div>
+        </div>
+        <hr class="text-muted">
+
+        <!-- cheese Rolls -->
+        <div>
+          <div class="d-flex justify-content-between align-items-baseline">
+            <h1 class="itemName mb-0 display-3"><b>cheese rolls</b></h1><span class="itemTag d-none">Cheese-rolls</span>
+            <div class="badge text-white buttonBackground">
+              <span>$</span><span class="itemPrice">10.50</span>
+            </div>
+          </div>
+          <p class="text-muted">6 pieces</p>
+          <div class="badge buttonBackground text-white addToCart">
+            <span >Add to cart</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Salads Menu -->
+      <div id="Salads" class="container-fluid menu p-4 bg-white shadow">
+        <!-- tabouleh -->
+        <div>
+          <div class="d-flex justify-content-between align-items-baseline">
+            <h1 class="itemName mb-0 display-3"><b>Tabouleh </b></h1><span class="itemTag d-none">tabouleh</span>
+            <div class="badge text-white buttonBackground">
+              <span>$</span><span class="itemPrice">13.50</span>
+            </div>
+          </div>
+          <p class="text-muted">Traditional salad merged with lemon and olive oil dressing</p>
+          <div class="badge buttonBackground text-white addToCart">
+            <span >Add to cart</span>
+          </div>
+        </div>
+        <hr class="text-muted">
+    
+        <!-- Fattouch -->
+        <div>
+          <div class="d-flex justify-content-between align-items-baseline">
+            <h1 class="itemName mb-0 display-3"><b>Fattouch</b></h1><span class="itemTag d-none">fattouch</span>
+            <div class="badge text-white buttonBackground">
+              <span>$</span><span class="itemPrice">14.50</span>
+            </div>
+          </div>
+          <p class="text-muted">Traditional salad topped with crispy bread, with lemon and olive oil dressing</p>
+          <div class="badge buttonBackground text-white addToCart">
+            <span >Add to cart</span>
+          </div>
+        </div>
+        <hr class="text-muted">
+    
+        <!-- Chicken Ceasar Salad -->
+        <div>
+          <div class="d-flex justify-content-between align-items-baseline">
+            <h1 class="itemName mb-0 display-3"><b>Chicken Ceasar salad</b></h1><span class="itemTag d-none">Chicken-ceasar-salad</span>
+            <div class="badge text-white buttonBackground">
+              <span>$</span><span class="itemPrice">11.00</span>
+            </div>
+          </div>
+          <p class="text-muted">Chicken breast on top of lettuce, parmesan cheese, crispy croutone, caesar dressing</p>
+          <div class="badge buttonBackground text-white addToCart">
+            <span >Add to cart</span>
+          </div>
+        </div>
+        <hr class="text-muted">
+    
+        <!-- Greek Salad -->
+        <div>
+          <div class="d-flex justify-content-between align-items-baseline">
+            <h1 class="itemName mb-0 display-3"><b>Greek Salad</b></h1><span class="itemTag d-none">Greek Salad</span>
+            <div class="badge text-white buttonBackground">
+              <span>$</span><span class="itemPrice">25.50</span>
+            </div>
+          </div>
+          <p class="text-muted">Lettuce, tomatoes, cucumber, olives, fetta cheese, oregano, lemon and olive oil dressing</p>
+          <div class="badge buttonBackground text-white addToCart">
+            <span >Add to cart</span>
+          </div>
+        </div>
+        <hr class="text-muted">
+
+        <!-- Crab Salad -->
+        <div>
+          <div class="d-flex justify-content-between align-items-baseline">
+            <h1 class="itemName mb-0 display-3"><b>Crab salad</b></h1><span class="itemTag d-none">Crab-salad</span>
+            <div class="badge text-white buttonBackground">
+              <span>$</span><span class="itemPrice">11.00</span>
+            </div>
+          </div>
+          <p class="text-muted">Shredded crab slices, lettuce, tomatoes and corn served with mustard dressing</p>
+          <div class="badge buttonBackground text-white addToCart">
+            <span >Add to cart</span>
+          </div>
+        </div>
+        <hr class="text-muted">
+
+        <!-- Coleslaw Salad -->
+        <div>
+          <div class="d-flex justify-content-between align-items-baseline">
+            <h1 class="itemName mb-0 display-3"><b>Coleslaw salad</b></h1><span class="itemTag d-none">Coleslaw-salad</span>
+            <div class="badge text-white buttonBackground">
+              <span>$</span><span class="itemPrice">11.00</span>
+            </div>
+          </div>
+          <p class="text-muted">Thinly sliced cabbage in mayo sauce</p>
+          <div class="badge buttonBackground text-white addToCart">
+            <span >Add to cart</span>
+          </div>
+        </div>
+      </div>
+        
+        <!-- Sandwish Menu -->
+        <div id="Sandwich" class="container-fluid menu p-4 bg-white shadow">
+          <!-- Chicken -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline ">
+              <h1 class="itemName mb-0 display-3">Chicken</h1><span class="itemTag d-none">Chicken</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">12.50</span>
+              </div>
+            </div>
+            <p class="text-muted">Fries, pickles, garlic, sumac with homemade sauce</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+            
+          </div>
+          
+          <hr class="text-muted">
+      
+          <!-- Chicken livers -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class=" itemName mb-0 display-3"><b>Chicken livers</b></h1><span class="itemTag d-none">Chicken-livers</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">15.50</span>
+              </div>
+            </div>
+            <p class="text-muted">Livers, fries, pickles and garlic with home made sauce</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          
+          <hr class="text-muted">
+      
+          <!-- Chicken kafta -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Chicken kafta</b></h1><span class="itemTag d-none">Chicken-Kafta</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">chicken kafta, fries, pickles, garlic, sumac with homemade sauce</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Chicken Sub -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Chicken Sub</b></h1><span class="itemTag d-none">Chicken-Sub</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">Fries, mozzarella cheese, lettuce, corn, soya and coktail sauce</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Francisco -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Francisco</b></h1><span class="itemTag d-none">Francisco</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">chicken breast, lettuce, mayo, pickles and mozzarella cheese</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Zinger -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Zinger</b></h1><span class="itemTag d-none">Zinger-Sandwish</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">Chicken, cheddar cheese, lettuce and special hot sauce</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Rosto -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Rosto</b></h1><span class="itemTag d-none">Rosto</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">Meat, tomato, lettuce, pickles, mayo and mozzarella cheese</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Fahita -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Fahita</b></h1><span class="itemTag d-none">Fahita</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">Chiken strips, mozzarella cheese, green peppers, onions, corn and avocado sauce</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Philadelphia -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Philadelphia</b></h1><span class="itemTag d-none">Philadelphia</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">Beef steak strips, mozzarella cheese, green peppers, onions, mushroom, corn, steak sauce and mayo</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Sausage -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Sausage</b></h1><span class="itemTag d-none">Sausage-Sandwish</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">Lettuce, tomato, mayo and pickles</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Soujouk Sandwish -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Soujouk</b></h1><span class="itemTag d-none">Soujouk-Sandwish</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">Lettuce, tomato, garlic, pickles and lemon</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Hamburger -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Hamburger</b></h1><span class="itemTag d-none">Hamburger</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">Freshly prepared meat, fries, coleslaw and ketchup</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Chicken Burger -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Chicken Burger</b></h1><span class="itemTag d-none">Chicken-Burger</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">Fries, coleslaw and our special sauce</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- French Fries -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>French Fries</b></h1><span class="itemTag d-none">French-Fries</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">served with coleslaw and ketchup</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Chicken Escallop -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Chicken Escallop</b></h1><span class="itemTag d-none">Chicken-Escallop-Sandwish</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">Served with lettuce, fries, corn and our speciality sauce</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Chicken Crispy -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Chicken Crispy</b></h1><span class="itemTag d-none">Chicken-Crispy-Sandwish</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">Served with lettuce and corn and our speciality sauce</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Chicken nuggets -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Chicken Nuggets</b></h1><span class="itemTag d-none">Chicken-Nuggets-Sandwish</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">Served with lettuce, corn, fries and our speaciality sauce</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Tawouk -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Tawouk</b></h1><span class="itemTag d-none">Tawouk-Sandwish</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">Chicken skewers with garlic, pickles and fries</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Meat -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Meat</b></h1><span class="itemTag d-none">Meat-Sandwish</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">Beef skewers, hummus, pickles, tomato</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Kabab -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Kabab</b></h1><span class="itemTag d-none">Kabab-Sandwish</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">Skewers of spiced ground meat minced with onions served with hummus and pickles</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Mixed Grill -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Mixed Grill</b></h1><span class="itemTag d-none">Mixed-Grill-Sandwish</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">Kefta, beef and chicken skewers served with hummus, pickles, garlic, spicy bread and fries</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+        </div>
+  
+        <!-- Plate Menu -->
+        <div id="Plate" class="container-fluid menu p-4 bg-white shadow">
+          <!-- Hamburger plate -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Hamburger</b></h1><span class="itemTag d-none">Hamburger-Plate</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">Served with fries and coleslaw salad</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Chicken Burger -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Chicken Burger</b></h1><span class="itemTag d-none">Chicken-Burger-Plate</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">Served with fries and coleslaw salad</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Chicken Escallop -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Chicken Escallop</b></h1><span class="itemTag d-none">Chicken-Escallop-Plate</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">5 pieces served with fries, coleslaw and our speciality sauce</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Chicken Crispy -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Chicken Crispy</b></h1><span class="itemTag d-none">Chicken-Crispy-Plate</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">7 pieces served with fries, coleslaw, our speciality sauce and cheddar cheese</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Chicken nuggets -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Chicken Nuggets</b></h1><span class="itemTag d-none">Chicken-Nuggets-Plate</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">10 pieces served with fries, coleslaw and our speaciality sauce</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Tawouk -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Tawouk</b></h1><span class="itemTag d-none">Tawouk-Plate</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">2 skewers served with fries, coleslaw and garlic sauce</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Meat -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Meat</b></h1><span class="itemTag d-none">Meat-Plate</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">2 skewers served with fries, hummus and spicy bread</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Kabab -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Kabab</b></h1><span class="itemTag d-none">Kabab-Plate</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">2 skewers served with fries, hummus and spicy bread</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Mixed Grill -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Mixed Grill</b></h1><span class="itemTag d-none">Mixed-Grill-Sandwish</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">Kefta, beef and chicken skewers served with hummus, pickles, garlic, spicy bread and fries</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+        </div>
+
+        <!-- Family Pack Menu -->
+        <div id="familyPack" class="container-fluid menu p-4 bg-white shadow">
+          <!-- Chicken Escallop -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Chicken Escallop</b></h1><span class="itemTag d-none">Chicken-Escallop-FP</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">1kg served with coleslaw and our speciality sauce</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Chicken Crispy -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Chicken Crispy</b></h1><span class="itemTag d-none">Chicken-Crispy-Plate</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">1kg served with coleslaw, our speciality sauce and cheddar cheese</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Chicken nuggets -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Chicken Nuggets</b></h1><span class="itemTag d-none">Chicken-Nuggets-FP</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">1kg served with coleslaw and our speaciality sauce</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Tawouk -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Tawouk</b></h1><span class="itemTag d-none">Tawouk-FP</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">9 skewers served with coleslaw and garlic sauce</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Meat -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Meat</b></h1><span class="itemTag d-none">Meat-FP</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">9 skewers served with hummus and spicy bread</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Kabab -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Kabab</b></h1><span class="itemTag d-none">Kabab-FP</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">9 skewers served with hummus and spicy bread</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Mixed Grill -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Mixed Grill</b></h1><span class="itemTag d-none">Mixed-Grill-FP</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">9 skewers served with hummus, garlic sauce and spicy bread</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+        </div>
+
+        <!-- Pure Chicken Menu -->
+        <div id="pureChicken" class="container-fluid menu p-4 bg-white shadow">
+          <!-- Grilled Chicken -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Grilled Chicken</b></h1><span class="itemTag d-none">Grilled-Chicken</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">Served with pickles and garlic</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Char-Grilled Chicken -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Char-Grilled Chicken</b></h1><span class="itemTag d-none">Char-Grilled-Chicken</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">Served with pickles and garlic</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Chicken wings -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Chicken Wings</b></h1><span class="itemTag d-none">Char-Grilled-Chicken-wings</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">1 kg grilled chicken wings with garlic and pickles</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Chicken Thighs -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Chicken Thighs</b></h1><span class="itemTag d-none">Grilled-Chicken-Thighs</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <p class="text-muted">1 kg grilled chicken thighs with garlic and pickles</p>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Beverages Menu -->
+        <div id="Beverages" class="container-fluid menu p-4 bg-white shadow">
+          <!-- Pepsi -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Pepsi</b></h1><span class="itemTag d-none">Pepsi</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Miranda -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Miranda</b></h1><span class="itemTag d-none">Miranda</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- 7UP -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>7up</b></h1><span class="itemTag d-none">7up</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Water -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Water</b></h1><span class="itemTag d-none">Water</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+        </div>
+
+        <!-- Add Ons Menu -->
+        <div id="addOns" class="container-fluid menu p-4 bg-white shadow">
+          <!-- Cheddar Cheese -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Cheddar Cheese</b></h1><span class="itemTag d-none">Cheddar-Cheese</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+
+          <!-- Barbecue -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Barbecue</b></h1><span class="itemTag d-none">Barbecue</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">17.00</span>
+              </div>
+            </div>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          <hr class="text-muted">
+        </div>
+
+        <!-- Fresh Chicken menu -->
+        <div id="freshChicken" class="container-fluid menu p-4 bg-white shadow">
+          <!-- whole Chicken -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline ">
+              <h1 class="itemName mb-0 display-3">whole Chicken</h1><span class="itemTag d-none">whole-Chicken</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">3.25</span>
+              </div>
+            </div>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          
+          <hr class="text-muted">
+      
+          <!-- Chicken livers -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class=" itemName mb-0 display-3"><b>Chicken livers</b></h1><span class="itemTag d-none">Fresh-Chicken-livers</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">3.30</span>
+              </div>
+            </div>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+          
+          <hr class="text-muted">
+      
+          <!-- Chicken Breast -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Chicken Breast</b></h1><span class="itemTag d-none">Chicken-Breast</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">6.50</span>
+              </div>
+            </div>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+
+          <hr class="text-muted">
+
+          <!-- Chicken thighs -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Chicken Thighs</b></h1><span class="itemTag d-none">Chicken-Thighs</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">2.25</span>
+              </div>
+            </div>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+
+          <hr class="text-muted">
+
+          <!-- Chicken Wings -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Chicken Wings</b></h1><span class="itemTag d-none">Chicken-Wings</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">2.25</span>
+              </div>
+            </div>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+
+          <hr class="text-muted">
+
+          <!-- Chicken gizzard -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Chicken Gizzard (قوانص)</b></h1><span class="itemTag d-none">Chicken-Gizzard</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">1.25</span>
+              </div>
+            </div>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+
+          <hr class="text-muted">
+
+          <!-- Chicken Neck -->
+          <div>
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h1 class="itemName mb-0 display-3"><b>Chicken Neck</b></h1><span class="itemTag d-none">Chicken-Neck</span>
+              <div class="badge text-white buttonBackground">
+                <span>$</span><span class="itemPrice">0.50</span>
+              </div>
+            </div>
+            <div class="badge buttonBackground text-white addToCart">
+              <span >Add to cart</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- About Container -->
+    <div class="container-fluid py-5 bg-light" id="about">
+      <div class="container">
+        <h1 class="text-center display-2 my-5" style="color:darkred;">ABOUT</h1>
+        <h1 class="display-4"><b>Opening Hours</b></h1>
+        <div class="row fs-2">
+          <div class="col-lg-6">
+            <p>All days 10:00am - 11:00pm</p>
+          </div>
+  
+          <h1 class="display-4"><b>History</b></h1>
+          <p class="fs-2">
+            Safa Chicken restaurant is a popular fastfood restaurant, specializing in char grilled chicken recipes, 
+            providing Professional management and offering great service.
+            </p>
+            <p>Offering fresh chicken every day have made us a popular destination for Loyal consumers. 
+              Founded in 2000, we have become the destination for fast food serving And the pioneers in delivery service.
+            </p>
+          
+          </p>  
+          <p class="fs-2">We are proud of our interiors.</p>
+          <img src="/public/assets/safa-chicken-exterior.jpg" style="width:100%" class="my-3 img-greyscale" alt="Restaurant">
+      
+        </div>
+      </div>
+    </div>
+  
+    <!-- Contact -->
+    <div class="container-fluid bg-light py-5 fs-2" id="contact">
+      <div class="container">
+        <h1 class="text-center display-2 my-5" style="color:darkred;">CONTACT US</h1>
+        <h3>Give us a call</h3>
+        <div class="mb-3">
+          <h3><i class="bi bi-telephone-fill iconColor fs-5"></i> Ain Qani Main Branch: <a href="tel: 0096171777180" class="text-muted ms-2"> 71- 777 180</a></h3>
+      </div>
+        <div class="mb-3">
+          <h3><i class="bi bi-telephone-fill iconColor fs-5"></i> Bakaata Branch: <a href="tel: 0096181019159" class="text-muted ms-2"> 81- 019 159</a></h3>
+      </div>
+      <div class="mb-3">
+        <h3><i class="bi bi-telephone-fill iconColor fs-5"></i> Kfarhim Branch: <a href="tel: 0096178816526" class="text-muted ms-2"> 78- 816 526</a></h3>
+    </div>
+      <h3>Or find us on:</h3>
+      <div class="mb-3">
+          <h3><i class="bi bi-facebook iconColor fs-5"></i><a href="https://www.facebook.com/SafaChicken1" target="_blank" class="text-muted ms-2">facebook: SafaChicken1</a></h3>
+
+          <h3><i class="bi bi-instagram iconColor fs-5"></i><a href="https://www.instagram.com/safachicken/" target="_blank" class="text-muted ms-2">instagram: safachicken</a></h3>
+      </div>
+        <p><strong>Reserve</strong> a table, ask for today's offer or just send us a message:</p>
+        <form action="/submit" method="post">
+          <div class="mb-3">
+            <input type="text" class="form-control extra-large" placeholder="Name" required name="Name">
+          </div>
+          <div class="mb-3">  
+            <input type="text" class="form-control extra-large" placeholder="Address" required name="Address">
+          </div>
+          <div class="mb-3">
+            <input type="number" class="form-control extra-large" placeholder="Phone number" required name="Phone">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control extra-large" placeholder="Write us a message" required name="Message">
+          </div>
+          <div class="mb-3">
+            <button type="submit" class="btn buttonBackground text-white btn-lg btn-block fs-2 sendBtn">SEND MESSAGE</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  
+    <!-- Footer -->
+    <footer class="text-center bg-dark text-white py-2">
+      <p class="fs-3">Built by <a href="https://twitter.com/AslaneAbK" title="Aslan" target="_blank" class="text-success hover-text-green">
+        Heavenly Code</a></p>
+    </footer>
+    <!-- cart -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="shoppingCart" aria-labelledby="shoppingCartLabel">
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title shoppingCartTitle fw-bold" id="shoppingCartLabel">Cart (<span>0</span>)</h2>
+        <button class="btn-close text-reset" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="addedFood">
+
+        </div>
+      </div>
+
+      <div class="cartFooter border-top border-2 p-3">
+
+      </div>
+    </div>
+  
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+  
+</html>
